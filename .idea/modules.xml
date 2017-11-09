@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Speaky-Jumbo.iml" filepath="$PROJECT_DIR$/Speaky-Jumbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Speaky_Jumbo.iml" filepath="$PROJECT_DIR$/Speaky_Jumbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
