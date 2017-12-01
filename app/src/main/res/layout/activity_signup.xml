@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tufts.ywang.speaky_jumbo.signup">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="587dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/banner"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/choose"
+            android:layout_width="139dp"
+            android:layout_height="139dp"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="102dp"
+            app:srcCompat="@drawable/add"
+            tools:layout_editor_absoluteY="200dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="282dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/usr"
+                android:layout_width="251dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/psw"
+                android:layout_width="251dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/cpsw"
+                android:layout_width="251dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"
+                android:ems="10"
+                android:hint="Confirm password"
+                android:inputType="textPassword" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp"
+                android:weightSum="1">
+
+                <ImageButton
+                    android:id="@+id/back"
+                    android:layout_width="122dp"
+                    android:layout_height="43dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/back"
+                    android:layout_marginEnd="8dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toStartOf="@+id/finish" />
+
+                <ImageButton
+                    android:id="@+id/finish"
+                    android:layout_width="122dp"
+                    android:layout_height="43dp"
+                    android:scaleType="fitCenter"
+                    android:background="@null"
+                    app:srcCompat="@drawable/finish"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="78dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

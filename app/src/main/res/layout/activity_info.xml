@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tufts.ywang.speaky_jumbo.info">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="587dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/banner"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="139dp"
+            android:layout_height="139dp"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="102dp"
+            tools:layout_editor_absoluteY="200dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="30sp"
+            android:layout_below="@+id/add"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="279dp"
+            android:id="@+id/relativeLayout2">
+
+            <TextView
+                android:id="@+id/textgender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Gender"
+                android:textSize="16sp"
+                android:layout_alignBaseline="@+id/gender"
+                android:layout_alignBottom="@+id/gender"
+                android:layout_toStartOf="@+id/gender" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="174dp"
+                android:layout_height="35dp"
+                android:text="Gender"
+                android:textSize="16sp"
+                android:layout_marginEnd="54dp"
+                android:layout_marginTop="49dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/textlrn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Language\nof learning"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/gender"
+                android:layout_alignEnd="@+id/textgender" />
+
+            <TextView
+                android:id="@+id/acc_s_lan"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="0.03"
+                android:text="Language of learning"
+                android:textSize="16sp"
+                android:layout_alignTop="@+id/textlrn"
+                android:layout_alignStart="@+id/gender"
+                android:layout_alignEnd="@+id/gender" />
+
+            <TextView
+                android:id="@+id/textnat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Native Language"
+                android:textSize="16sp"
+                android:layout_alignBaseline="@+id/acc_n_lan"
+                android:layout_alignBottom="@+id/acc_n_lan"
+                android:layout_alignEnd="@+id/textlrn" />
+
+            <TextView
+                android:id="@+id/acc_n_lan"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Native Language"
+                android:textSize="16sp"
+                android:layout_below="@+id/textlrn"
+                android:layout_alignStart="@+id/acc_s_lan"
+                android:layout_alignEnd="@+id/acc_s_lan" />
+
+            <TextView
+                android:id="@+id/textcontact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:textSize="16sp"
+                android:layout_below="@+id/acc_n_lan"
+                android:layout_alignEnd="@+id/textnat"
+                android:layout_marginTop="11dp" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:textSize="16sp"
+                android:layout_alignBaseline="@+id/textcontact"
+                android:layout_alignBottom="@+id/textcontact"
+                android:layout_alignStart="@+id/acc_n_lan"
+                android:layout_alignEnd="@+id/acc_n_lan" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

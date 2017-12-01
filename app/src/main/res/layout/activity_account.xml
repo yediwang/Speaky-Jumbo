@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tufts.ywang.speaky_jumbo.account">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="587dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/banner"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="139dp"
+            android:layout_height="139dp"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="102dp"
+            tools:layout_editor_absoluteY="200dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="279dp">
+
+            <TextView
+                android:id="@+id/textgender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/gender"
+                android:layout_alignBottom="@+id/gender"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@+id/gender"
+                android:text="Gender"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/gender"
+                android:layout_width="174dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:entries="@array/gender"
+                android:layout_marginEnd="77dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/textlrn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Language\nof learning"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/gender"
+                android:layout_alignEnd="@+id/textgender" />
+
+            <Spinner
+                android:id="@+id/acc_s_lan"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_weight="0.03"
+                android:entries="@array/languages"
+                android:layout_alignTop="@+id/textlrn"
+                android:layout_alignStart="@+id/gender"
+                android:layout_alignEnd="@+id/gender" />
+
+            <TextView
+                android:id="@+id/textnat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Native Language"
+                android:textSize="16sp"
+                android:layout_alignBaseline="@+id/acc_n_lan"
+                android:layout_alignBottom="@+id/acc_n_lan"
+                android:layout_alignEnd="@+id/textlrn" />
+
+            <Spinner
+                android:id="@+id/acc_n_lan"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:entries="@array/languages"
+                android:layout_below="@+id/textlrn"
+                android:layout_alignStart="@+id/acc_s_lan"
+                android:layout_alignEnd="@+id/acc_s_lan" />
+
+            <TextView
+                android:id="@+id/textcontact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact"
+                android:textSize="16sp"
+                android:layout_below="@+id/acc_n_lan"
+                android:layout_alignEnd="@+id/textnat"
+                android:layout_marginTop="11dp" />
+
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:layout_alignBaseline="@+id/textcontact"
+                android:layout_alignBottom="@+id/textcontact"
+                android:layout_alignStart="@+id/acc_n_lan"
+                android:layout_alignEnd="@+id/acc_n_lan" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="175dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <ImageButton
+                    android:id="@+id/back"
+                    android:layout_width="122dp"
+                    android:layout_height="43dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@+id/finish"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/back" />
+
+                <ImageButton
+                    android:id="@+id/finish"
+                    android:layout_width="122dp"
+                    android:layout_height="43dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="78dp"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/finish" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.tufts.ywang.speaky_jumbo.menu"
+    tools:showIn="@layout/app_bar_menu">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/bg" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="139dp"
+            android:layout_height="139dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            tools:layout_editor_absoluteY="200dp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/icon"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="180dp"
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/n_lan"
+                app:srcCompat="@drawable/card" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/s_lan"
+                android:layout_alignStart="@+id/imageView2"
+                android:layout_marginStart="32dp"
+                android:text="Native Language"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/n_lan"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView2"
+                android:layout_marginStart="16dp"
+                android:layout_weight="0.03"
+                android:entries="@array/languages" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="180dp"
+                android:layout_height="80dp"
+                android:layout_above="@+id/scrollView2"
+                android:layout_alignStart="@+id/s_lan"
+                app:srcCompat="@drawable/card" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView3"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="13dp"
+                android:layout_marginTop="14dp"
+                android:text="Language of learning"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/s_lan"
+                android:layout_width="190dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/textView3"
+                android:layout_marginEnd="9dp"
+                android:layout_weight="0.03"
+                android:entries="@array/languages" />
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView2">
+
+                <LinearLayout
+                    android:id="@+id/lnlo"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"></LinearLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

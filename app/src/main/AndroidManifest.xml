@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ywang.speaky_jumbo">
+    package="com.tufts.ywang.speaky_jumbo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -9,20 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Login">
+        <activity android:name="com.tufts.ywang.speaky_jumbo.Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".signup" />
-        <activity android:name=".homepage" />
+        <activity android:name="com.tufts.ywang.speaky_jumbo.signup" />
+        <activity android:name="com.tufts.ywang.speaky_jumbo.homepage" />
         <activity
-            android:name=".menu"
+            android:name="com.tufts.ywang.speaky_jumbo.menu"
             android:label="@string/title_activity_menu"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".account"></activity>
+        <activity android:name="com.tufts.ywang.speaky_jumbo.account" />
+        <activity android:name="com.tufts.ywang.speaky_jumbo.info"></activity>
     </application>
 
 </manifest>
